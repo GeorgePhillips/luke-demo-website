@@ -1,5 +1,8 @@
 collections:
   staff:
+    output: false
+  clients:
+    output: true
 
 paginate: 10
 paginate_path: "/blog/:num/"
@@ -15,6 +18,12 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+  -
+    scope:
+      path: ""
+      type: "clients"
+    values:
+      layout: "client"
   -
     scope:
       path: "pages"

@@ -8,14 +8,9 @@ subtitle: See some of our proud customers with exemplary results.
 <section class="diagonal">
 	<div class="container">
 		<ul class="image-grid">
-			<li><img src="http://placehold.it/200x200"></li>
-			<li><img src="http://placehold.it/200x200"></li>
-			<li><img src="http://placehold.it/200x200"></li>
-			<li><img src="http://placehold.it/200x200"></li>
-			<li><img src="http://placehold.it/200x200"></li>
-			<li><img src="http://placehold.it/200x200"></li>
-			<li><img src="http://placehold.it/200x200"></li>
-			<li><img src="http://placehold.it/200x200"></li>
+			{% for client in site.clients %}
+				<li><a href="{{ client.url }}"><img src="{{ client.image_path }}"></a></li>
+			{% endfor %}
 		</ul>
 	</div>
 </section>
