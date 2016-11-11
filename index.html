@@ -10,7 +10,7 @@ title: Urban
 	</div>
 </section>
 
-<section class="diagonal">
+<section class="diagonal patterned">
 	<div class="container halves">
 		<div>
 			<h3 class="editable">Some of our work</h1>
@@ -20,7 +20,7 @@ title: Urban
 		<div>
 			<ul class="image-grid">
 				{% for client in site.clients | limit: 4 %}
-					<li><a href="{{ client.url }}"><img src="{{ client.image_path }}" class="screenshot"></a></li>
+					<li><a href="{{ client.url }}"><img src="{{ client.image_path }}"></a></li>
 				{% endfor %}
 			</ul>
 		</div>
