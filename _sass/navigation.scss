@@ -1,16 +1,28 @@
-.nav-open nav {
-	border-bottom: 1px dotted rgba(255, 255, 255, .2);
-	padding: 10px 0;
-	a {
-		display: block;
+.nav-open{
+	header {
+		background: #444;
+		z-index: 10;
+
+		@media #{$mid-point} {
+			background: none;
+		}
 	}
 
-	@media #{$mid-point} {
+	nav {
+		margin: 20px 0 0 0;
 		border: 0;
-		padding: 0 20px;
 
 		a {
-			display: inline;
+			display: block;
+		}
+
+		@media #{$mid-point} {
+			border: 0;
+			padding: 0 20px;
+
+			a {
+				display: inline;
+			}
 		}
 	}
 }
@@ -20,32 +32,37 @@ nav {
 	font-size: .8em;
 	width: 100%;
 
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		display: block;
+	}
+
 	@media #{$mid-point} {
 		text-align: right;
 		position: absolute;
 		top: 0;
 		right: 0;
 		padding: 0 20px;
-	}
 
-	ul {
-		margin: 0;
-	}
-
-	li {
-		display: inline-block;
+		li {
+			display: inline-block;
+		}
 	}
 
 	a {
 		margin: 0 3px;
 		padding: 20px 10px;
-		border-bottom: 1px solid rgba(255,255,255,0);
 		color: rgba(255,255,255,.8);
 		transition: .2s ease-in-out;
 		display: none;
 		font-size: 1rem;
 
 		@media #{$mid-point} {
+			border-bottom: 1px solid rgba(255,255,255,0);
 			display: block;
 			padding: 10px;
 		}
@@ -69,8 +86,13 @@ nav {
 	}
 
 	a:hover {
-		border-bottom: 1px solid rgba(255,255,255,.3);
 		color: #fff;
+
+		@media #{$mid-point} {
+			border-bottom: 1px solid rgba(255,255,255,.3);
+			display: block;
+			padding: 10px;
+		}
 	}
 
 	@media #{$mid-point} {
