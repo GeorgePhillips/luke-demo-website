@@ -1,4 +1,4 @@
-.button a, input[type=submit] {
+input[type=submit] {
 	color: #fff;
 	text-decoration: none;
 	padding: 20px 30px;
@@ -9,12 +9,12 @@
 	cursor: pointer;
 }
 
-.button a:hover, input[type=submit]:hover {
+input[type=submit]:hover {
 	border: 1px solid $brand-color;
 	background: $secondary-brand-color;
 }
 
-.button a:active, input[type=submit]:active {
+input[type=submit]:active {
 	transform: translateY(1px);
 }
 

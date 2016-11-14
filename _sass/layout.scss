@@ -94,12 +94,36 @@ section {
 
 		a {
 			color: #ab7a28;
-
 		}
 	}
 
 	&.alternate {
 		background: #eee;
+	}
+}
+
+.button {
+	padding: 13px 38px;
+	border-radius: 3px;
+	display: inline-block;
+	color: $brand-color;
+	text-decoration: none;
+	cursor: pointer;
+	margin: 20px 0 0 0;
+	border: 1px solid #fff;
+	background: #fff;
+	text-decoration: none !important;
+
+	&:hover {
+		background: rgba(255, 255, 255, 0.3);
+		color: #fff;
+	}
+
+	&:active {
+		opacity: 1;
+		background: rgba(255, 255, 255, 0.1);
+		color: #fff;
+		transform: translateY(1px);
 	}
 }
 
